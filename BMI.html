@@ -1,0 +1,67 @@
+<!-- index.html file  -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="style.css" rel="stylesheet">
+        <script src="script.js" defer></script>
+        <title>BMI Calculator</title>
+    </head>
+    <body>
+        <div id="metric-container">
+            <h1>BMI Calculator</h1>
+
+            <p>Age (2-120)</p>
+ 
+            <input value="25" type="text" id="age" />
+
+            <p>Height (cm)</p>
+ 
+            <input value="180" type="text" id="height" />
+ 
+            <p>Weight (kg)</p>
+ 
+            <input value="65" type="text" id="weight" />
+ 
+            <button id="calc" onclick="calculateBMI()">Calculate</button>
+
+            <button  id="unitsUS" onclick="changeUnits(this.id)">Change to US units</button>
+ 
+            <div id="result">
+                <p id="result-text">Your BMI: </p>
+            </div>
+
+            <img src="BMI.png"/>
+        </div>
+
+        <div id="us-container" class="container">
+            <h1>BMI Calculator</h1>
+
+            <p>Age (2-120)</p>
+ 
+            <input value="25" type="text" id="ageUS" />
+
+            <p>Height (in)</p>
+ 
+            <input value="5" type="text" id="heightFT" /> 
+            <input value="10" type="text" id="heightIN" />
+ 
+            <p>Weight (lbs)</p>
+ 
+            <input value="160" type="text" id="weightUS"/>
+ 
+            <button id="calcUS" onclick="calculateBMI()">Calculate</button>
+
+            <button id="unitsCM" onclick="changeUnits(this.id)"> Change to metric units</button>
+ 
+            <div id="result">
+                <p id="result-textUS">Your BMI: </p>
+            </div>
+
+            <img src="BMI.png"/>
+
+        </div>
+
+    </body>
+</html>
